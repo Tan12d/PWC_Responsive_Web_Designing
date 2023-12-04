@@ -10,3 +10,4 @@
 
 ## Output
 
+[Output](https://tan12d.github.io/PWC_Responsive_Web_Designing/1.%20HTML/Code/3.%20Chess%20Board%20Designing/index.html)
