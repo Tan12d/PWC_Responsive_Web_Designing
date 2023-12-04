@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Forever Event Management</title>
+ <style>
+ *{
+ font-weight: bold;
+ }
+ body{
+ background-image:url("foreverbg.jpg");
+ background-size:cover;
+ }
+ table{
+ width:55%;
+ height:70%;
+ margin-left: auto;
+ margin-right: auto;
+ border-spacing: 5px;
+ }
+ #foot{
+ margin-left: 600px;
+ border-spacing: 5px;
+ }
+ #submit,#reset{
+ padding:7px;
+ font-size:15px;
+ color: #ffffff;
+ background-color: #192841;
+ }
+ img{
+ margin-left: 500px;
+ margin-top : 6px;
+ margin-bottom: 1px;
+   }
+ td{
+ background-color: #ffffff;
+ }
+ caption, table, td{
+ border:1px solid #000000;
+ }
+ caption{
+ font-size:20px;
+ font-weight:bold;
+ color: white;
+ background-color: #192841;
+ padding:5px;
+ }
+ input[type="tel"],input[type="email"],input[type="text"],
+ select,textarea, input[type="number"], input[type="url"],
+ input[type="date"]{
+ width:100%;
+ }
+ input[type="range"]{
+ width:80%;
+ }
+ </style>
+</head>
+<body>
+ <script>
+ function show_value(x)
+ {
+ document.getElementById("demo").innerHTML="Rs."+x;
+ }
+ </script>
+ <form>
+ <figure id="forever_image">
+ <img id="image1" src="forever.jpg" height="80" width="200" alt="bg_image">an Event Management co
+ </figure>
+ <table>
+<caption id="table caption">Vendor Registeration Form</caption>
+
+   <tr>
+ <td>Company name</td>
+ <td><input type="text" id="cname" required></td>
+ </tr>
+
+ <tr>
+ <td>Type</td>
+ <td>
+ <input type="radio" name="ctype" id="corporation">Corporation
+ <input type="radio" name="ctype" id="partnership">Partnership
+ <input type="radio" name="ctype" id="individual">Individual
+ <input type="radio" name="ctype" id="others">Others
+ </td>
+ </tr>
+
+ <tr>
+ <td>Phone Number</td>
+ <td><input type="tel" id="phno" pattern="[7-9]\d{9}" required></td>
+ </tr>
+
+ <tr>
+ <td>Email ID</td>
+ <td><input type="email" id="email" required></td>
+ </tr>
+
+ <tr>
+ <td>Location</td>
+ <td><textarea id="address" rows="4" cols="50" required></textarea></td>
+ </tr>
+
+ <tr>
+ <td>Website Address</td>
+ <td><input type="url" id="link" required></td>
+ </tr>
+
+ <tr>
+<td>TIN No.</td>
+<td><input type="number" id="tin" required></td>
+ </tr>
+
+ <tr>
+ <td>TIN No Expiry Date</td>
+ <td><input type="date" id="expiry" required></td>
+ </tr>
+
+ <tr>
+ <td>Average Project Cost</td>
+ <td><input type="range" id="cost" min="25000" max="500000" step="1000" onchange="show_value(
+ </tr>
+
+ <tr>
+ <td>Upload Images of Licence, PAN & Facade</td>
+ <td><input type="file" id="profile" multiple required></td>
+ </tr>
+ </table>
+ <br/>
+
+ <div id="foot">
+ <input type="submit" id="submit" value="REGISTER">
+ <input type="reset" id="reset" value="CLEAR">
+ </div>
+ </form>
+</body>
+</html>
