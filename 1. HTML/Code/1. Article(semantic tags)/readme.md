@@ -10,4 +10,5 @@
 
 ## Output
 
-![Output](https://tan12d.github.io/PWC_Responsive_Web_Designing/1.%20HTML/Code/1.%20Article(semantic%20tags)/index.html)
+![![image](https://github.com/Tan12d/PWC_Responsive_Web_Designing/assets/100254217/3cc876db-c491-4671-9a60-de780947d7e4)
+](https://tan12d.github.io/PWC_Responsive_Web_Designing/1.%20HTML/Code/1.%20Article(semantic%20tags)/index.html)
